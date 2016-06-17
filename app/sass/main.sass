@@ -1,0 +1,50 @@
+@import variables
+
+@import partials/_header
+@import partials/_footer
+
+
+*
+  outline: none
+  box-sizing: border-box
+  user-select: none
+  &::selection
+    background-color: $brand
+    color: white
+
+html
+  font-size: 12px
+  font-family: $defaultFont
+  color: $defaultColor
+  word-wrap: break-word
+  overflow-wrap: break-word
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  +breakpoint(medium)
+    font-size: 16px
+
+body
+  font-family: inherit
+  color: inherit
+  min-height: 100%
+  height: auto
+  max-width: 100%
+  overflow-y: auto
+  overflow-x: hidden
+  word-spacing: .3px
+
+
+img
+  max-width: 100%
+  height: auto
+  -ms-interpolation-mode: bicubic
+  display: inline-block
+  vertical-align: middle
+  border: 0
+
+
+.grid-container
+  max-width: 100rem
+  margin: 0 auto
+  height: 100%
