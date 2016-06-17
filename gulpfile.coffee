@@ -66,4 +66,4 @@ gulp.task 'watch', ->
   gulp.watch 'app/coffee/*.coffee', ['coffee', 'build']
 
 # DEFAULT #############################################
-gulp.task 'default', ['jade', 'watch', 'build', 'serve']
+gulp.task 'default', ['jade', 'sass', 'watch', 'build', 'serve']
