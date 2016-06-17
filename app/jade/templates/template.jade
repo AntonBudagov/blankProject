@@ -1,6 +1,6 @@
 //- mixins
-include includes/menu
-include includes/addSomeText
+include ../includes/menu
+include ../includes/addSomeText
 //-
 doctype html
 html
@@ -14,7 +14,7 @@ html
     block title
     link(href='css/main.css', rel='stylesheet')
   body
-    include partials/header
+    include ../partials/header
     block content
-    include partials/footer
+    include ../partials/footer
     script(src="js/all.js")
